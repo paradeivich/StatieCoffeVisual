@@ -129,11 +129,15 @@
   <ItemGroup>
     <ClCompile Include="ArabicCoffe.cpp" />
     <ClCompile Include="Coffe.cpp" />
+    <ClCompile Include="HotChocolatte.cpp" />
+    <ClCompile Include="LatteCream.cpp" />
     <ClCompile Include="StatieCoffeVisual.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArabicCoffe.h" />
     <ClInclude Include="Coffe.h" />
+    <ClInclude Include="HotChocolatte.h" />
+    <ClInclude Include="LatteCream.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

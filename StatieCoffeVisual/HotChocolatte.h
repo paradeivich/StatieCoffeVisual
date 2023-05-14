@@ -1,9 +1,8 @@
 #pragma once
 #include "Coffe.h"
-#include <string.h>
 using namespace std;
 
-class ArabicCoffe : public Coffe
+class HotChocolatte
 {
 public:
 	int getCoffe();

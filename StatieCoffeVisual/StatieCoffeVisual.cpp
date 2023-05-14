@@ -2,6 +2,9 @@
 #include <conio.h>
 #include <windows.h>
 #include "Coffe.h"
+#include "LatteCream.h"
+#include "HotChocolatte.h"
+#include "ArabicCoffe.h"
 using namespace std;
 
 void MenuCoffe()
