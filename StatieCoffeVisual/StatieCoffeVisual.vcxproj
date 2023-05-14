@@ -128,16 +128,26 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ArabicCoffe.cpp" />
+    <ClCompile Include="Cappucino.cpp" />
     <ClCompile Include="Coffe.cpp" />
+    <ClCompile Include="ExpressoCoffe.cpp" />
     <ClCompile Include="HotChocolatte.cpp" />
+    <ClCompile Include="LatteCoffe.cpp" />
     <ClCompile Include="LatteCream.cpp" />
+    <ClCompile Include="LongExpresso.cpp" />
+    <ClCompile Include="ShortExpresso.cpp" />
     <ClCompile Include="StatieCoffeVisual.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArabicCoffe.h" />
+    <ClInclude Include="Cappucino.h" />
     <ClInclude Include="Coffe.h" />
+    <ClInclude Include="ExpressoCoffe.h" />
     <ClInclude Include="HotChocolatte.h" />
+    <ClInclude Include="LatteCoffe.h" />
     <ClInclude Include="LatteCream.h" />
+    <ClInclude Include="LongExpresso.h" />
+    <ClInclude Include="ShortExpresso.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

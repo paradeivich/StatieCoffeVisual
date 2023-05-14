@@ -5,14 +5,19 @@
 #include "LatteCream.h"
 #include "HotChocolatte.h"
 #include "ArabicCoffe.h"
+#include "LongExpresso.h"
+#include "ShortExpresso.h"
+#include "ShortExpresso.h"
+#include "LatteCoffe.h"
+#include "Cappucino.h"
 using namespace std;
 
 void MenuCoffe()
 {
     cout << "Aparat de cafea:" << "\n" << endl;
-    cout << "1. Cafea Expresso    2. Expresso Scurt" << endl;
-    cout << "3. Expresso Lung     4. Cafea Latte" << endl;
-    cout << "5. Cappuccino        6. Cafea Arabica" << endl;
+    cout << "1. Americano         2. Espresso " << endl;
+    cout << "3. Mocha             4. Latte" << endl;
+    cout << "5. Cappuccino        6. Irish" << endl;
     cout << "7. Ciocolata Calda   8. Spuma de lapte" << endl;
     cout << "9. Exit" << endl;
     cout << endl << "Alegeti optiunea: ";
