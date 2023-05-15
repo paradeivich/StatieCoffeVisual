@@ -2,7 +2,7 @@
 #include "Coffe.h"
 using namespace std;
 
-class HotChocolatte
+class HotChocolatte:public Coffe
 {
 public:
 	int getCoffe();

@@ -1,6 +1,6 @@
 #pragma once
 #include "Coffe.h"
-class LatteCream
+class LatteCream:public Coffe
 {
 public:
 	int getCoffe();
