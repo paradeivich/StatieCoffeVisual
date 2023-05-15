@@ -9,7 +9,7 @@ int Espresso::getCoffe()
 }
 string Espresso::getName()
 {
-	return "Spuma de Lapte";
+	return "Espresso";
 }
 int Espresso::getGramOfMilk()
 {

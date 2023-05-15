@@ -6,5 +6,5 @@ int Irish::getCoffe()
 }
 string Irish::getName()
 {
-	return "Cafea Espresso";
+	return "Irish";
 }

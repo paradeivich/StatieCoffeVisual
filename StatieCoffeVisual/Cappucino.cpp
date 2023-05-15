@@ -6,5 +6,5 @@ int Cappucino::getCoffe()
 }
  string Cappucino::getName()
 {
-	 return " Capucino";
+	 return "Capucino";
 }

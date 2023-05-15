@@ -9,5 +9,5 @@ int LatteCoffe::getCoffe()
 }
 string LatteCoffe::getName()
 {
-	return "Latte Caffe";
+	return "Latte";
 }

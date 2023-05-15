@@ -15,73 +15,80 @@ using namespace std;
 class PreparareCoffe
 {
 public:
-    void preparareBautura(Coffe &coffe, int sugar)
+    void preparareBautura(Coffe &coffe, int zahar)
     {
         cout << endl << "Se prepara bautura: " << coffe.getName() << endl;
-        cout << coffe.getCoffe() << "ml coffe: ";
-        cout << coffe.getGramsOfMilk() << "ml milk: ";
-        cout << sugar * 10 << "mg sugar: " << endl;
+        Sleep(5000);
+        cout << coffe.getCoffe() << "ml coffe.. ";
+        Sleep(3000);
+        cout << coffe.getGramsOfMilk() << "ml milk.. ";
+        Sleep(2000);
+        cout << zahar * 10 << "mg sugar.. " << endl;
+        Sleep(1000);
         cout << "\n";
+        cout << "Bautura dumneavoastra a fost preparata ! Va rugam ridicati paharul!" << endl << endl;
     }
-    void makeLatteCoffe(int sugar)
+    void makeLatteCoffe(int zahar)
     {
         LatteCoffe coffe;
-        preparareBautura(coffe, sugar);
+        preparareBautura(coffe, zahar);
     };
 
-    void makeIrish(int sugar)
+    void makeIrish(int zahar)
     {
         Irish coffe;
-        preparareBautura(coffe, sugar);
+        preparareBautura(coffe, zahar);
     };
 
-    void makeEspresso(int sugar)
+    void makeEspresso(int zahar)
     {
         Espresso coffe;
-        preparareBautura(coffe, sugar);
+        preparareBautura(coffe, zahar);
     };
-    void makeMocha(int sugar)
+    void makeMocha(int zahar)
     {
         Mocha coffe;
-        preparareBautura(coffe, sugar);
+        preparareBautura(coffe, zahar);
     };
-    void makeCappuccino(int sugar)
+    void makeCappuccino(int zahar)
     {
         Cappucino coffe;
-        preparareBautura(coffe, sugar);
+        preparareBautura(coffe, zahar);
     };
-    void makeAmericano(int sugar)
+    void makeAmericano(int zahar)
     {
         Americano coffe;
-        preparareBautura(coffe, sugar);
+        preparareBautura(coffe, zahar);
     };
-    void makeHotChocolatte(int sugar)
+    void makeHotChocolatte(int zahar)
     {
         HotChocolatte coffe;
-        preparareBautura(coffe, sugar);
+        preparareBautura(coffe, zahar);
     };
-    void makeLatteCream(int sugar)
+    void makeLatteCream(int zahar)
     {
         LatteCream coffe;
-        preparareBautura(coffe, sugar);
+        preparareBautura(coffe, zahar);
     };
     
 
 };
 void MenuCoffe()
 {
-    cout << "Aparat de cafea:" << "\n" << endl;
-    cout << "1. Americano              2. Espresso " << endl;
-    cout << "3. Mocha                  4. Latte" << endl;
-    cout << "5. Cappuccino             6. Irish" << endl;
-    cout << "7. Ciocolata Calda        8. Spuma de lapte" << endl;
-    cout << "9. Exit" << endl;
-    cout << endl << "Alegeti optiunea: ";
+    cout << "______________________________Automat cafea___________________________" << endl;
+    cout << "\n" << endl;
+    cout << "1. Americano                           2. Espresso " << endl;
+    cout << "3. Mocha                               4. Latte" << endl;
+    cout << "5. Cappuccino                          6. Irish" << endl;
+    cout << "7. Ciocolata Calda                     8. Spuma de lapte" << endl;
+    cout << "\n9. Exit" << endl;
+    cout << "____________________________________________________________________________" << endl;
+    cout << endl << "                          Alegeti optiunea: ";
 }
-int readMoney(int drinkCost)
+int citireSuma(int drinkCost)
 {
     int sum;
-    cout << endl << "Pret: " << drinkCost << "Introduceti suma: .";
+    cout << endl << "Pret: " << drinkCost << " lei. Introduceti suma: ";
     cin >> sum;
     return sum;
 }
@@ -98,10 +105,10 @@ void proceseazaRestul(int userInput, int cost)
 {
     cout << endl << "Rest: " << (userInput - cost) << "lei";
 }
-int readSugar()
+int citireZahar()
 {
     int level;
-    cout << "Selectati NIVELUL de zahar dorit (1-5)";
+    cout << "NIVEL De Zahar (1-5): ";
     cin >> level;
     return level;
 }
@@ -120,73 +127,73 @@ int main()
         switch (opt)
         {
         case 1:
-            userInput = readMoney(5);
+            userInput = citireSuma(5);
             if (costIsValid(userInput, 5))
             {
-                nivelZahar = readSugar();
+                nivelZahar = citireZahar();
                 preparareCoffe.makeIrish(nivelZahar);
                 proceseazaRestul(userInput, 5);
             }
             break;
         case 2:
-            userInput = readMoney(9);
+            userInput = citireSuma(9);
             if (costIsValid(userInput, 9))
             {
-                nivelZahar = readSugar();
+                nivelZahar = citireZahar();
                 preparareCoffe.makeEspresso(nivelZahar);
                 proceseazaRestul(userInput, 9);
             }
             break;
         case 3:
-            userInput = readMoney(10);
+            userInput = citireSuma(10);
             if (costIsValid(userInput, 10))
             {
-                nivelZahar = readSugar();
+                nivelZahar = citireZahar();
                 preparareCoffe.makeMocha(nivelZahar);
                 proceseazaRestul(userInput, 10);
             }
             break;
         case 4:
-            userInput = readMoney(8);
+            userInput = citireSuma(8);
             if (costIsValid(userInput, 8))
             {
-                nivelZahar = readSugar();
+                nivelZahar = citireZahar();
                 preparareCoffe.makeLatteCoffe(nivelZahar);
                 proceseazaRestul(userInput, 8);
             }
             break;
         case 5:
-            userInput = readMoney(4);
+            userInput = citireSuma(4);
             if (costIsValid(userInput, 4))
             {
-                nivelZahar = readSugar();
+                nivelZahar = citireZahar();
                 preparareCoffe.makeCappuccino(nivelZahar);
                 proceseazaRestul(userInput, 4);
             }
             break;
         case 6:
-            userInput = readMoney(4);
+            userInput = citireSuma(4);
             if (costIsValid(userInput, 4))
             {
-                nivelZahar = readSugar();
+                nivelZahar = citireZahar();
                 preparareCoffe.makeAmericano(nivelZahar);
                 proceseazaRestul(userInput, 4);
             }
             break;
         case 7:
-            userInput = readMoney(9);
+            userInput = citireSuma(9);
             if (costIsValid(userInput, 9))
             {
-                nivelZahar = readSugar();
+                nivelZahar = citireZahar();
                 preparareCoffe.makeHotChocolatte(nivelZahar);
                 proceseazaRestul(userInput, 9);
             }
             break;
         case 8:
-            userInput = readMoney(6);
+            userInput = citireSuma(6);
             if (costIsValid(userInput, 6))
             {
-                nivelZahar = readSugar();
+                nivelZahar = citireZahar();
                 preparareCoffe.makeLatteCream(nivelZahar);
                 proceseazaRestul(userInput, 6);
             }
