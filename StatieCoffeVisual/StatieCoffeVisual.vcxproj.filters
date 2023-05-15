@@ -18,7 +18,7 @@
     <ClCompile Include="StatieCoffeVisual.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ArabicCoffe.cpp">
+    <ClCompile Include="Americano.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Coffe.cpp">
@@ -30,13 +30,13 @@
     <ClCompile Include="HotChocolatte.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LongExpresso.cpp">
+    <ClCompile Include="Mocha.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ShortExpresso.cpp">
+    <ClCompile Include="Espresso.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ExpressoCoffe.cpp">
+    <ClCompile Include="Irish.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="LatteCoffe.cpp">
@@ -47,7 +47,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ArabicCoffe.h">
+    <ClInclude Include="Americano.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Coffe.h">
@@ -59,13 +59,13 @@
     <ClInclude Include="HotChocolatte.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LongExpresso.h">
+    <ClInclude Include="Mocha.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ShortExpresso.h">
+    <ClInclude Include="Espresso.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ExpressoCoffe.h">
+    <ClInclude Include="Irish.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="LatteCoffe.h">

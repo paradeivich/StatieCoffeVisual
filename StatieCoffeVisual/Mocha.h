@@ -2,7 +2,7 @@
 #include "Coffe.h"
 using namespace std;
 
-class LongExpresso : public Coffe
+class Mocha : public Coffe
 {
 public:
 	int getCoffe();

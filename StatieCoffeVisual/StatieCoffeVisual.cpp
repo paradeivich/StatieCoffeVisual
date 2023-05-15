@@ -4,10 +4,10 @@
 #include "Coffe.h"
 #include "LatteCream.h"
 #include "HotChocolatte.h"
-#include "ArabicCoffe.h"
-#include "LongExpresso.h"
-#include "ShortExpresso.h"
-#include "ExpressoCoffe.h"
+#include "Americano.h"
+#include "Mocha.h"
+#include "Espresso.h"
+#include "Irish.h"
 #include "LatteCoffe.h"
 #include "Cappucino.h"
 using namespace std;
@@ -29,20 +29,20 @@ public:
         preparareBautura(coffe, sugar);
     };
 
-    void makeExpresso(int sugar)
+    void makeIrish(int sugar)
     {
-        ExpressoCoffe coffe;
+        Irish coffe;
         preparareBautura(coffe, sugar);
     };
 
-    void makeShortExpresso(int sugar)
+    void makeEspresso(int sugar)
     {
-        ShortExpresso coffe;
+        Espresso coffe;
         preparareBautura(coffe, sugar);
     };
-    void makeLongExpresso(int sugar)
+    void makeMocha(int sugar)
     {
-        LongExpresso coffe;
+        Mocha coffe;
         preparareBautura(coffe, sugar);
     };
     void makeCappuccino(int sugar)
@@ -50,9 +50,9 @@ public:
         Cappucino coffe;
         preparareBautura(coffe, sugar);
     };
-    void makeArabicCoffe(int sugar)
+    void makeAmericano(int sugar)
     {
-        ArabicCoffe coffe;
+        Americano coffe;
         preparareBautura(coffe, sugar);
     };
     void makeHotChocolatte(int sugar)
@@ -71,9 +71,9 @@ public:
 void MenuCoffe()
 {
     cout << "Aparat de cafea:" << "\n" << endl;
-    cout << "1. Cafea Expresso         2. Expresso Scurt " << endl;
-    cout << "3. Expresso Lung          4. Cafea Latte" << endl;
-    cout << "5. Cappuccino             6. Cafea Arabica" << endl;
+    cout << "1. Americano              2. Espresso " << endl;
+    cout << "3. Mocha                  4. Latte" << endl;
+    cout << "5. Cappuccino             6. Irish" << endl;
     cout << "7. Ciocolata Calda        8. Spuma de lapte" << endl;
     cout << "9. Exit" << endl;
     cout << endl << "Alegeti optiunea: ";
@@ -124,7 +124,7 @@ int main()
             if (costIsValid(userInput, 5))
             {
                 nivelZahar = readSugar();
-                preparareCoffe.makeExpresso(nivelZahar);
+                preparareCoffe.makeIrish(nivelZahar);
                 proceseazaRestul(userInput, 5);
             }
             break;
@@ -133,7 +133,7 @@ int main()
             if (costIsValid(userInput, 9))
             {
                 nivelZahar = readSugar();
-                preparareCoffe.makeShortExpresso(nivelZahar);
+                preparareCoffe.makeEspresso(nivelZahar);
                 proceseazaRestul(userInput, 9);
             }
             break;
@@ -142,7 +142,7 @@ int main()
             if (costIsValid(userInput, 10))
             {
                 nivelZahar = readSugar();
-                preparareCoffe.makeLongExpresso(nivelZahar);
+                preparareCoffe.makeMocha(nivelZahar);
                 proceseazaRestul(userInput, 10);
             }
             break;
@@ -165,12 +165,12 @@ int main()
             }
             break;
         case 6:
-            userInput = readMoney(12);
-            if (costIsValid(userInput, 12))
+            userInput = readMoney(4);
+            if (costIsValid(userInput, 4))
             {
                 nivelZahar = readSugar();
-                preparareCoffe.makeArabicCoffe(nivelZahar);
-                proceseazaRestul(userInput, 12);
+                preparareCoffe.makeAmericano(nivelZahar);
+                proceseazaRestul(userInput, 4);
             }
             break;
         case 7:

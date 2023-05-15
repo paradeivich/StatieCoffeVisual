@@ -1,10 +1,10 @@
 #pragma once
+#include <string>
 #include "Coffe.h"
-class ShortExpresso: public Coffe
+
+class Irish :public Coffe
 {
-public:
 	int getCoffe();
 	string getName();
-	int getGramOfMilk();
 };
 

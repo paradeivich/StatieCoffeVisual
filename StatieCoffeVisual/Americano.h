@@ -3,7 +3,7 @@
 #include <string.h>
 using namespace std;
 
-class ArabicCoffe : public Coffe
+class Americano : public Coffe
 {
 public:
 	int getCoffe();
