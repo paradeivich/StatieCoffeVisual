@@ -2,9 +2,13 @@
 
 int Cappucino::getCoffe()
 {
-	return 15;
+	return 20;
 }
  string Cappucino::getName()
 {
 	 return "Capucino";
 }
+ int Cappucino::getGramsOfMilk()
+ {
+	 return 20;
+ }

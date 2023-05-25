@@ -2,15 +2,15 @@
 
 int Americano::getCoffe()
 {
-	return 10;
+	return 30;
 }
 string Americano::getName()
 {
-	return "Americano";
+	return "Americano ";
 }
 int Americano::getGramsOfMilk()
 {
-	return 2;
+	return 0;
 }
 
 

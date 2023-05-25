@@ -19,14 +19,16 @@ public:
     {
         cout << endl << "Se prepara bautura: " << coffe.getName() << endl;
         Sleep(5000);
-        cout << coffe.getCoffe() << "ml coffe.. ";
+        cout << coffe.getCoffe() << "mg coffee.. "<<endl;
         Sleep(3000);
-        cout << coffe.getGramsOfMilk() << "ml milk.. ";
+        cout << coffe.getGramsOfMilk() << "ml milk.. "<<endl;
         Sleep(2000);
         cout << zahar * 10 << "mg sugar.. " << endl;
-        Sleep(1000);
+        Sleep(3500);
         cout << "\n";
-        cout << "Bautura dumneavoastra a fost preparata ! Va rugam ridicati paharul!" << endl << endl;
+        cout << "Va rugam ridicati paharul!" << endl << endl;
+        
+        
     }
     void makeLatteCoffe(int zahar)
     {
@@ -97,13 +99,16 @@ bool costIsValid(int userInput, int cost)
     if (userInput < cost)
     {
         cout << endl << "Nu ati introdus suma necesara! ";
+        cout << endl << "Alegeti alta optiune: ";
         return false;
     }
     return true;
 }
 void proceseazaRestul(int userInput, int cost)
 {
-    cout << endl << "Rest: " << (userInput - cost) << "lei";
+    cout << endl << "Rest: " << (userInput - cost);
+    if (userInput - cost == 1)cout << " leu";
+    else cout << " lei";
 }
 int citireZahar()
 {
@@ -122,6 +127,9 @@ int main()
     int opt;
     do
     {
+        Sleep(4000);
+        system("cls");
+        MenuCoffe();
         cin >> opt;
         int userInput, nivelZahar;
         switch (opt)
@@ -131,7 +139,7 @@ int main()
             if (costIsValid(userInput, 5))
             {
                 nivelZahar = citireZahar();
-                preparareCoffe.makeIrish(nivelZahar);
+                preparareCoffe.makeAmericano(nivelZahar);
                 proceseazaRestul(userInput, 5);
             }
             break;
@@ -176,7 +184,7 @@ int main()
             if (costIsValid(userInput, 4))
             {
                 nivelZahar = citireZahar();
-                preparareCoffe.makeAmericano(nivelZahar);
+                preparareCoffe.makeIrish(nivelZahar);
                 proceseazaRestul(userInput, 4);
             }
             break;
